@@ -1,0 +1,31 @@
+<mat-list-item class="primary-imenu-item" role="listitem">
+    <mat-form-field class="select-form">
+        <mat-select 
+        placeholder="Years" 
+        name="year" 
+        class="filter-select" 
+        [(ngModel)]="selectedYears" 
+        [compareWith]="equals"
+        multiple 
+        #yearSelect>
+          <mat-option disabled="disabled" class="filter-option">
+            <button 
+            mat-raised-button 
+            class="mat-primary fill text-sm" 
+            (click)="selectAll(yearSelect, years, selectedYears)">Select All
+            </button>
+            <button 
+            mat-raised-button 
+            class="mat-accent fill text-sm" 
+            (click)="deselectAll(yearSelect)">
+            Deselect All
+            </button>
+          </mat-option>
+          <mat-option *ngFor="let year of years" [value]="year">
+            {{year.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+  </mat-list-item>
+
+  
