@@ -38,12 +38,14 @@ export class AppComponent {
   
   
    Validate() {
+    console.log('Results:\n');
     console.log('A: ', this.getCount('A')); 
     console.log('C: ', this.getCount('C'));
     console.log('E: ', this.getCount('E'));
     console.log('I: ', this.getCount('I'));
     console.log('R: ', this.getCount('R'));
     console.log('S: ', this.getCount('S'));
+    console.log('-----');
    }
 
  
