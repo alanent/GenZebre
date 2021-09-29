@@ -27,6 +27,7 @@ export class AppComponent {
     this.selectedQuestions = [];
     select.value = [];
   }
+  
   getCount(Code) {
     var count = 0;
     for (var i = 0; i < this.selectedQuestions.length; i++) {
@@ -35,11 +36,16 @@ export class AppComponent {
         }
     }
     return count;
-}
+  }
   
   
    Validate() {
-    console.log(getCount('C'));
+    console.log('A: ', this.getCount('A')); 
+    console.log('C: ', this.getCount('C'));
+    console.log('E: ', this.getCount('E'));
+    console.log('I: ', this.getCount('I'));
+    console.log('R: ', this.getCount('R'));
+    console.log('S: ', this.getCount('S'));
    }
 
  
