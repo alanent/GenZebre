@@ -1,10 +1,10 @@
 <mat-list-item class="primary-imenu-item" role="listitem">
     <mat-form-field class="select-form">
         <mat-select 
-        placeholder="Years" 
-        name="year" 
+        placeholder="Questions" 
+        name="question" 
         class="filter-select" 
-        [(ngModel)]="selectedYears" 
+        [(ngModel)]="selectedQuestions" 
         [compareWith]="equals"
         multiple 
         #yearSelect>
@@ -12,17 +12,17 @@
             <button 
             mat-raised-button 
             class="mat-primary fill text-sm" 
-            (click)="selectAll(yearSelect, years, selectedYears)">Select All
+            (click)="selectAll(questionSelect, questions, selectedQuestions)">Select All
             </button>
             <button 
             mat-raised-button 
             class="mat-accent fill text-sm" 
-            (click)="deselectAll(yearSelect)">
+            (click)="deselectAll(questionSelect)">
             Deselect All
             </button>
           </mat-option>
-          <mat-option *ngFor="let year of years" [value]="year">
-            {{year.viewValue}}
+          <mat-option *ngFor="let question of questions" [value]="question">
+            {{question.Questions}}
           </mat-option>
         </mat-select>
     </mat-form-field>
