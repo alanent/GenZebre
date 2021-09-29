@@ -18,15 +18,12 @@ export class AppComponent {
   }
 
   // array is selectedQuestions
-  selectAll(select: MatSelect, values, array) {
-  select.value = values;
-  array = values;
+  selectAll() {
   this.selectedQuestions = this.questions;
   }
 
-  deselectAll(select: MatSelect) {
+  deselectAll() {
     this.selectedQuestions = [];
-    select.value = [];
   }
   
   getCount(Code) {
