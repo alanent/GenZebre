@@ -1,3 +1,3 @@
 # GenZebre
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/GenZebre)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/github/alanent)
