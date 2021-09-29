@@ -19,8 +19,9 @@ export class AppComponent {
 
   // array is selectedQuestions
   selectAll(select: MatSelect, values, array) {
+  select.value = values;
+  array = values;
   this.selectedQuestions = this.questions;
-  console.log(this.selectedQuestions); // selectedQuestions is still undefined
   }
 
   deselectAll(select: MatSelect) {
