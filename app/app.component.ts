@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   selectedQuestions: any[];
   questions: any[];
+  count_code_A
 
   equals(objOne, objTwo) {
     if (typeof objOne !== 'undefined' && typeof objTwo !== 'undefined') {
@@ -28,6 +29,17 @@ export class AppComponent {
     select.value = [];
   }
 
+   getCount(Code:string) {
+    var count = 0;
+    for (var i = 0; i < obj.selectedQuestions.length; i++) {
+        if (obj.selectedQuestions[i].Code== Code) {
+            count++;
+        }
+    }
+    return count;
+  }
+
+ 
   ngOnInit(){
     this.questions =
       
