@@ -28,6 +28,10 @@
     </mat-form-field>
   </mat-list-item>
 
-  <div *ngFor="let Question of selectedQuestions">
-    code : {{ Question.Code }}, question : {{ Question.Question }}
-  </div>
+<div *ngFor="let Question of selectedQuestions">
+   {{ Question.Question }}
+</div>
+<button mat-button color="primary" (click)="Validate()">
+  Valider mes questions
+</button>
+
