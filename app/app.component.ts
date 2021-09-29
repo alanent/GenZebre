@@ -25,7 +25,7 @@ export class AppComponent {
   }
 
   deselectAll(select: MatSelect) {
-    this.selectedYears = [];
+    this.selectedQuestions = [];
     select.value = [];
   }
 
